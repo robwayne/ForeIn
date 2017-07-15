@@ -1,0 +1,13 @@
+<template name="layout">
+  <div class="container-fluid">
+    <div class="row" id="layout-container">
+      <div id="side-menu">
+        <!-- {{>slideoutMenu}} -->
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        {{>navigation}}
+        {{>Template.dynamic template=main}}
+      </div>
+    </div>
+  </div>
+</template>
