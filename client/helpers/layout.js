@@ -11,6 +11,5 @@ Template.layout.onRendered(function(){
     'tolerance':70,
     'grabWidth':180
   });
-  console.log(slideoutInstance);
 
 });
