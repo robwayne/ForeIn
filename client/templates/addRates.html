@@ -1,0 +1,51 @@
+<template name="addRates">
+  <div class="container">
+    <form>
+      <strong>Currency Abbreviation: </strong> <input type="text" id="currencyAbbrevInput"><br/><br/>
+
+      <select id="bankSelect1">
+        {{#each banks}}
+          <option value="{{_id}}"> {{name}} </option>
+        {{/each}}
+      </select><br/>
+      Selling Rate: <input type="text" id="buyingRateInput1"><br/><br/>
+
+      <select id="bankSelect2">
+        {{#each banks}}
+          <option value="{{_id}}"> {{name}} </option>
+        {{/each}}
+      </select><br/>
+      Selling Rate: <input type="text" id="buyingRateInput2"><br/><br/>
+
+      <select id="bankSelect3">
+        {{#each banks}}
+          <option value="{{_id}}"> {{name}} </option>
+        {{/each}}
+      </select><br/>
+      Selling Rate: <input type="text" id="buyingRateInput3"><br/><br/>
+
+      <select id="bankSelect4">
+        {{#each banks}}
+          <option value="{{_id}}"> {{name}} </option>
+        {{/each}}
+      </select><br/>
+      Selling Rate: <input type="text" id="buyingRateInput4"><br/><br/>
+
+      <select id="bankSelect5">
+        {{#each banks}}
+          <option value="{{_id}}"> {{name}} </option>
+        {{/each}}
+      </select><br/>
+      Selling Rate: <input type="text" id="buyingRateInput5"><br/><br/>
+
+      <select id="bankSelect6">
+        {{#each banks}}
+          <option value="{{_id}}"> {{name}} </option>
+        {{/each}}
+      </select><br/>
+      Selling Rate: <input type="text" id="buyingRateInput6"><br/><br/>
+
+      <button class="btn" type="submit" id="submitButton">Submit</button>
+    </form>
+  </div>
+</template>
