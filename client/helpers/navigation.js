@@ -8,6 +8,7 @@ Template.navigation.events({
     }
     else{
       slideoutInstance.open();
+      console.log("test");
     }
   }
 });
