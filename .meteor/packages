@@ -33,4 +33,9 @@ arillo:flow-router-helpers
 zimme:active-route
 chriswessels:hammer
 patrickleet:slideout
+<<<<<<< HEAD
 session
+=======
+dburles:google-maps
+mdg:geolocation
+>>>>>>> ecf6757a0d526fcc9bc719cfb483d7b6d3867058
