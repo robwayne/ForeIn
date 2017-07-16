@@ -14,7 +14,15 @@ Template.cards.helpers({
   },
 
   bankRates(){
-    return Rates.find({currency:"USD"}, {sort:{selling_rate:1}}).fetch();
+    currency = Session.get('userCurrency');
+    console.log(currency);
+    if(currency === undefined) currency = "USD";
+    console.log(currency);
+    return Rates.find({currency:currency}, {sort:{selling_rate:1}}).fetch();
+  },
+
+  getCurrency(){
+    return Session.get("userCurrency");
   }
 });
 
