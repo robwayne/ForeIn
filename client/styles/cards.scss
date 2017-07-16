@@ -31,6 +31,11 @@
 	justify-content: flex-start;
 	align-items: stretch;
 	align-content: stretch;
+
+	img{
+		max-width:100%;
+		max-height:100%;
+	}
 }
 
 .card-item {
@@ -45,6 +50,8 @@
 	justify-content: flex-start;
 	align-items: stretch;
 	align-content: stretch;
+	box-shadow:1px 1px 2px #999;
+	border-radius:2px;
 }
 
 .card-item > * {
@@ -52,7 +59,7 @@
 }
 
 .card-item > .bank-brand {
-	background: url('/img/scotia.jpg') #222;
+	//background: url('/img/scotia.jpg') #222;
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -101,4 +108,8 @@
 }
 .gmnoprint div {
     background:none !important;
+}
+
+.bank-brand>img{
+	border-radius:3px;
 }

@@ -10,10 +10,10 @@ Template.cards.onCreated(function(){
 
 Template.cards.helpers({
   getSortedBankData(bankId){
-	   return Banks.findOne({_id:bankId});
+	  return Banks.find({_id:bankId});
   },
 
   bankRates(){
-    return Rates.find({currency:"USD"}, {sort:{buying_rate:1}}).fetch();
+    return Rates.find({currency:"USD"}, {sort:{selling_rate:1}}).fetch();
   }
 });
