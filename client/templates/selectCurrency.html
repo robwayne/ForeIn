@@ -1,25 +1,24 @@
 <template name="selectCurrency">
    <div class="container-fluid">
      <div class="content">
-      <div class="input-box" id="homeCurrency">
-        <input type="text" class="form-control">
-        <input type="text" value="JMD" class="form-control" disabled>
+       <div class="input-box" id="homeCurrency">
+        <input type="text" class="form-control" id="user-input">
+        <input type="text" value="JMD" class="form-control" id="jmd" disabled>
       </div>
-      <div class="input-box">
-        <div class="input-box">
-          <h4 class="convert-text text-center">Convert To:</h4>
-        </div>
-        <div class="input-box">
-          <select id="desiredCurrency" class="form-control">
-            <option value="USD">USD</option>
-            <option value="CAD">CAD</option>
-            <option value="EUR">EUR</option>
-            <option value="GBP">GBP</option>
-            <option value="TTD">TTD</option>
-            <option value="KYD">KYD</option>
-          </select>
-        </div>
+      <div class="input-box" id="desiredCurrencyArea">
+        <p class="convert-text text-center">Convert To</p>
+        <select id="desiredCurrency" class="form-control">
+          <option value="USD">USD</option>
+          <option value="CAD">CAD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="TTD">TTD</option>
+          <option value="KYD">KYD</option>
+        </select>
+        <button class="convert-btn" type="submit">
+          <i class="glyphicon glyphicon-chevron-right"></i>
+        </button>
       </div>
-     </div>
-   </div>
+    </div>
+  </div>
 </template>
