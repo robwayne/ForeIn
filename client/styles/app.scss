@@ -141,6 +141,11 @@ body{
   margin-bottom: 20px;
 }
 
+.navbar-logo{
+  width:50px;
+  height:20px;
+}
+
 #page-title {
   line-height: 50px !important;
   font-size: 18px !important;
@@ -160,10 +165,4 @@ body{
 
 .convert-text {
   font-size: 12px;
-}
-
-.navbar-logo {
-  height: 40px;
-  width: auto;
-  margin: 0 auto;
 }
