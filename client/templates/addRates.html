@@ -1,0 +1,16 @@
+<template name="addRates">
+  <div class="container">
+    <form>
+      <strong>Currency Abbreviation: </strong> <input type="text" id="currencyAbbrevInput"><br/><br/>
+      <select id="bankSelect">
+        {{#each banks}}
+          <option value="{{_id}}"> {{name}} </option>
+        {{/each}}
+      </select><br/>
+      Selling Rate: <input type="text" id="sellingRateInput"><br/><br/>
+      Buying Rate: <input type="text" id="buyingRateInput"><br/><br/>
+
+      <button class="btn" type="submit" id="submitButton">Submit</button>
+    </form>
+  </div>
+</template>
