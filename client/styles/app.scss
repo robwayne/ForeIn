@@ -84,5 +84,16 @@ body{
   align-items:center;
   justify-content:center;
   width:100%;
-  min-height:100%;
+  min-height:80vh;
+}
+
+div#homeCurrency {
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+div#homeCurrency:first-child {margin-right: 10px;}
+
+div#homeCurrency:last-child {
+    margin-left: 20px;
 }
