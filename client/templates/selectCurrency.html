@@ -1,4 +1,21 @@
 <template name="selectCurrency">
    <div class="container-fluid">
+     <div class="content">
+      <div class="input-box">
+        <input type="text" class="form-control">
+        <input type="text" value="JMD" class="form-control inactive">
+      </div>
+      <div class="input-box">
+          <h4 class="convert-text">Convert To:</h4>
+          <select id="desiredCurrency" class="form-control">
+            <option value="USD">USD</option>
+            <option value="CAD">CAD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="TTD">TTD</option>
+            <option value="KYD">KYD</option>
+          </select>
+      </div>
+     </div>
    </div>
 </template>
