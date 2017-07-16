@@ -4,9 +4,8 @@ import { Session } from 'meteor/session';
 
 Template.cards.onCreated(function(){
   Meteor.subscribe('rates');
-  Meteor.subscribe('banks')
-
-})
+  Meteor.subscribe('banks');
+});
 
 Template.cards.helpers({
   getSortedBankData(bankId){
@@ -25,6 +24,7 @@ Template.cards.helpers({
     return Session.get("userCurrency");
   }
 });
+
 
 Template.cards.animations({
   ".cards-list":{

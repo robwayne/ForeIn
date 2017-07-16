@@ -5,7 +5,7 @@
     		<li class="card-item">
     			<div class="bank-brand">
           {{#each getSortedBankData (bank_id) }}
-    			  <img src="{{logo_url}}" alt="Bank Logo" class="bank-logo img-fluid">
+    			  <a href="/card"><img src="{{logo_url}}" alt="Bank Logo" class="bank-logo img-fluid"></a>
             <span><strong>{{abbreviation}}</strong></span>
           {{/each}}
     			</div>

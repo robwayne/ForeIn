@@ -180,3 +180,21 @@ body{
 .bank-card{
   padding-top:80px;
 }
+
+.button-link {
+    display: flex;
+    padding-top: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+button.btn.btn-success.site-btn {
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+}
+
+.cards-section.ncb-card.card.pt-5 {
+    padding-top: 50px;
+}

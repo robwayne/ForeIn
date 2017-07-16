@@ -1,11 +1,8 @@
 <template name="card">
-	<div class="bank-card">
-		<div class="brand">
-			<img src="/public/img/scotia.jpg" alt="Bank Logo" class="bank-logo img-fluid">
-			<br/>
-			<span><strong>Scotia Bank</strong></span>
-		</div>
-		<div class="rates">
+		<div class="cards-section ncb-card card pt-5">
+			{{#each getSortedBankData 'Gw4wa9CXT68Gwkmmc' }}
+				<img src="{{logo_url}}" alt="Bank Logo" class="card-logo ">
+			{{/each}}
 			<table class="table">
 				<thead>
 					<tr>
@@ -14,14 +11,18 @@
 						<th>SELL</th>
 					</tr>
 				</thead>
-				<tbody>
-					<tr>
-						<td>USD</td>
-						<td>123</td>
-						<td>129</td>
-					</tr>
+				<tbody class="pl-5">
+					{{#each ncbBank}}
+						<tr class="pl-5">
+							<td><strong>{{currency}}</strong></td>
+							<td>{{buying_rate}}</td>
+							<td>{{selling_rate}}</td>
+						</tr>
+					{{/each}}
 				</tbody>
 			</table>
-		</div>
+			<div class="button-link">
+				<button class="btn btn-success site-btn" type="button">Go to Site</button>
+			</div>
 	</div>
 </template>
