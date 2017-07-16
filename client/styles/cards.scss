@@ -42,7 +42,7 @@
 	padding: 0;
 	display: flex;
 	flex-flow: column wrap;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: stretch;
 	align-content: stretch;
 }
@@ -88,10 +88,17 @@
 }
 
 .card-item > .bank-location {
-	background: url('/img/bank-location.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
 	width: 100%;
-	flex: 1 1 auto;
+	height: 150px;
+	flex: none;
+	margin: 0;
+	padding: 0;
+	cursor: none;
+}
+
+.gmnoprint a, .gmnoprint span {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
 }
