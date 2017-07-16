@@ -17,3 +17,20 @@ Template.cards.helpers({
     return Rates.find({currency:"USD"}, {sort:{selling_rate:1}}).fetch();
   }
 });
+
+Template.cards.animations({
+  ".cards-list":{
+    container:".cards-section",
+    insert:{
+      class:"fade-in",
+      delay:0
+    },
+    remove:{
+      class:"fade-out",
+      delay:0
+    },
+    animateInitial: true,
+    animateInitialStep: 200,
+    animateInitialDelay: 0
+  }
+});
