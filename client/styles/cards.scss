@@ -21,11 +21,12 @@
 	align-items: flex-start;
 	align-content: flex-start;
 	list-style: none;
+	width:95%;
 }
 
 .card-item:first-child {
 	width: 100%;
-	height: 325px;
+	height: 270px;
 	padding: 0;
 	display: flex;
 	justify-content: flex-start;
@@ -41,7 +42,7 @@
 .card-item {
 	flex: none;
 	width: 49%;
-	height: 350px;
+	height: 245px;
 	background: #fff;
 	margin-bottom: 20px;
 	padding: 0;
@@ -51,7 +52,7 @@
 	align-items: stretch;
 	align-content: stretch;
 	box-shadow:1px 1px 2px #999;
-	border-radius:2px;
+	border-radius:3px;
 }
 
 .card-item > * {
@@ -59,18 +60,19 @@
 }
 
 .card-item > .bank-brand {
-	//background: url('/img/scotia.jpg') #222;
+	border-radius:2px 2px 0 0 ;
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: center center;
-	height: 100px;
+	height: 75px;
 	width: 100%;
 	color: #fff;
+	padding-top:10px;
 }
 
 .card-item > .bank-rates {
 	background: #222;
-	height: 75px;
+	height: 70px;
 	width: 100%;
 	display: flex;
 	flex-flow: row wrap;
@@ -92,15 +94,20 @@
 	justify-content: center;
 	align-items: center;
 	align-content: center;
+	background:#5fbc40;
 }
 
 .card-item > .bank-location {
 	width: 100%;
-	height: 150px;
+	height: 100px;
 	flex: none;
 	margin: 0;
 	padding: 0;
 	cursor: none;
+}
+
+.card-item > .bank-location:first-child{
+	height:100%;
 }
 
 .gmnoprint a, .gmnoprint span {
@@ -112,4 +119,21 @@
 
 .bank-brand>img{
 	border-radius:3px;
+}
+
+img.bank-logo {
+	width: 80%;
+	height: 60%;
+	margin-left:15px;
+	margin-top:10px;
+}
+
+.bank-brand:first-child {
+	box-shadow: 0px -1px 2px #999;
+}
+
+
+.card-item:first-child > .bank-rates > div:first-child,.card-item:first-child > .bank-rates > div:nth-child(2){
+	font-family:'Roboto', Arial, sans-serif;
+	color:yellow;
 }

@@ -5,15 +5,16 @@
     		<li class="card-item">
     			<div class="bank-brand">
           {{#each getSortedBankData (bank_id) }}
-    			  <img src="{{logo_url}}" alt="Bank Logo" class="img-fluid">
+    			  <img src="{{logo_url}}" alt="Bank Logo" class="bank-logo img-fluid">
+            <span><strong>{{abbreviation}}</strong></span>
           {{/each}}
     			</div>
     			<div class="bank-rates">
-    				<div>
-    					<h3>Buying</h3>${{buying_rate}}
+    				<div class="pt-0 pb-0 mb-0 mt-0">
+    					<h6>${{buying_rate}}</h6>BUY
     				</div>
-    				<div>
-    					<h3>Selling</h3>${{selling_rate}}
+    				<div class="pt-0 pb-0 mb-0 mt-0">
+    					<h3>${{selling_rate}}</h3>SELL
     				</div>
     			</div>
           {{> map}}
